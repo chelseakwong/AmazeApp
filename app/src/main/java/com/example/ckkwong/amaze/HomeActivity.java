@@ -18,14 +18,11 @@ package com.example.ckkwong.amaze;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,13 +30,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
-
 import java.util.ArrayList;
 import java.util.List;
-public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+public class HomeActivity extends FragmentActivity implements ActionBar.TabListener {
     private static final String TAG = "chelseaMsg";
 
     /**
@@ -133,7 +126,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             switch (i) {
                 case 0:
                     Log.i(TAG, "switched to 0");
-                    Fragment gridFragment = new StaggeredGridActivity();
+                    Fragment gridFragment = new FragmentGridActivity();
                     Bundle gridArgs = new Bundle();
                     gridFragment.setArguments(gridArgs);
                     return gridFragment;

@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -22,7 +21,7 @@ import java.util.List;
 /**
  * Created by ckkwong on 7/15/16.
  */
-public class StaggeredGridActivity extends Fragment {
+public class FragmentGridActivity extends Fragment {
     private static final String TAG = "chelseaMsg";
     private StaggeredGridLayoutManager gaggeredGridLayoutManager;
     private List<ItemObjects> gaggeredList;

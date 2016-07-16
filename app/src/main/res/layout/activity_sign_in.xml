@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.ckkwong.amaze.SignInActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Full Name"
+        android:ems="10"
+        android:id="@+id/editText_fullName"
+        android:layout_marginBottom="199dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText_emailID"
+        android:layout_alignTop="@+id/editText_fullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_password"
+        android:text="Password"
+        android:layout_below="@+id/editText_emailID"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:id="@+id/imageView"
+        android:src="@raw/palantir"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/button_signIn"
+        android:layout_below="@+id/editText_password"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
