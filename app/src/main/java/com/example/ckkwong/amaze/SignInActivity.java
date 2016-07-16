@@ -1,6 +1,7 @@
 package com.example.ckkwong.amaze;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,10 +40,15 @@ public class SignInActivity extends Activity {
                         databaseHelper.insert(editFullName.getText().toString(),
                                 editEmailID.getText().toString(),
                                 editPassword.getText().toString());
-
+                        transferView();
                     }
                 }
         );
+    }
+
+    public void transferView(){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
     }
 
     /*
