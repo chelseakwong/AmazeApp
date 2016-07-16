@@ -55,17 +55,13 @@ public class SignInActivity extends Activity {
                             }
                         }
                     }
-                }
-
-        );
     }
-
 
     public void attemptSignUp(Button currentButton) {
         currentButton.setOnClickListener(
                 new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+		    @Override
+		    public void onClick(View v) {
                         String emailID = editEmailID.getText().toString();
                         String password = editPassword.getText().toString();
 
@@ -86,7 +82,6 @@ public class SignInActivity extends Activity {
                         }
                     }
                 }
-
         );
     }
 

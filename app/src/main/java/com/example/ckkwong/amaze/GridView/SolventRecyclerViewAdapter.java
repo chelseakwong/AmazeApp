@@ -22,7 +22,6 @@ public class SolventRecyclerViewAdapter  extends RecyclerView.Adapter<SolventVie
 
     @Override
     public SolventViewHolders onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.solvent_list, null);
         SolventViewHolders rcv = new SolventViewHolders(layoutView);
         return rcv;
@@ -30,7 +29,7 @@ public class SolventRecyclerViewAdapter  extends RecyclerView.Adapter<SolventVie
 
     @Override
     public void onBindViewHolder(SolventViewHolders holder, int position) {
-        holder.countryName.setText(itemList.get(position).getName());
+        holder.object = itemList.get(position);
         holder.countryPhoto.setImageResource(itemList.get(position).getPhoto());
     }
 
